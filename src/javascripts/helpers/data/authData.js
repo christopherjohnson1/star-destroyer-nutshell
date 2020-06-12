@@ -2,25 +2,20 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 const authDiv = $('#auth');
-const pinterestDiv = $('#pinterest');
+const testDiv = $('#test');
 const logoutButton = $('#navbar-logout-button');
-const pinterestHeading = $('#show-me-the-pinterest');
-const boardsHeading = $('#pinterest-boards');
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
+    console.error('user', user);
     if (user) {
       authDiv.addClass('hide');
-      pinterestDiv.removeClass('hide');
+      testDiv.removeClass('hide');
       logoutButton.removeClass('hide');
-      pinterestHeading.addClass('hide');
-      boardsHeading.removeClass('hide');
     } else {
       authDiv.removeClass('hide');
-      pinterestDiv.addClass('hide');
+      testDiv.addClass('hide');
       logoutButton.addClass('hide');
-      pinterestHeading.removeClass('hide');
-      boardsHeading.addClass('hide');
     }
   });
 };
