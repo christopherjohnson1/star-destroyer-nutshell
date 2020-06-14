@@ -18,6 +18,7 @@ const checkLoginStatus = () => {
       logoutButton.addClass('hide');
     }
     personnel.buildAllPersonnel();
+    personnel.personnelEvents();
   });
 };
 

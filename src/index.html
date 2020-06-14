@@ -6,7 +6,7 @@
     <title>Star Destroyer</title>
 </head>
 <body>
-<!-- navbar -->
+<!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Star Destroyer</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,9 +21,39 @@
       </ul>
     </div>
   </nav>
-<!-- navbar end -->
+<!-- Navbar End -->
 
+<!-- Main Content Start  -->
 <div id="auth"></div>
 <div id="personnel" class="align-items-center offset"></div>
+<!-- Main Content End  -->
+
+<!-- Modal Start  -->
+
+<!-- Personnel Modal Start -->
+<div class="modal" id="addPersonnelModal" data-target="#myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title add">Add Personnel</h5>
+        <h5 class="modal-title edit">Edit Personnel</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="modalPersonnelForm"></form>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="submit" id="newPersonnelSubmit" class="new-personnel-submit btn btn-default">Submit</button>
+      <button type="submit" id="editPersonnelSubmit" class="edit-personnel-submit btn btn-default">Submit Edit</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Personnel Modal End  -->
+
+<!-- Modal End  -->
 </body>
 </html>
