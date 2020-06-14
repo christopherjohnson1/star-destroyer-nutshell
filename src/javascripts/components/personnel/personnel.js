@@ -4,6 +4,7 @@ import personnelData from '../../helpers/data/personnelData';
 import personnelCards from './personnelCards';
 import newPersonnelForm from './newPersonnelForm';
 import utils from '../../helpers/utils';
+import editPersonnelForm from './editPersonnelForm';
 
 const saveNewPersonnelItem = (e) => {
   e.stopImmediatePropagation();
@@ -20,6 +21,25 @@ const saveNewPersonnelItem = (e) => {
       buildAllPersonnel();
     })
     .catch((err) => console.error('save new personnel failed', err));
+};
+
+const editPersonnelItem = (e) => {
+  e.preventDefault();
+  const personnelId = $('.personnel-form').data('id');
+  console.error(personnelId);
+  const editPersonnel = {
+    name: $('#editPersonnelName').val(),
+    imageUrl: $('#editPersonnelImageUrl').val(),
+    title: $('#editPersonnelTitle').val(),
+    description: $('#editPersonnelDescription').val(),
+  };
+  personnelData.updatePersonnel(personnelId, editPersonnel)
+    .then(() => {
+      document.getElementById('modalPersonnelForm').reset();
+      $('#addPersonnelModal').modal('hide');
+      buildAllPersonnel();
+    })
+    .catch((err) => console.error('edit personnel failed', err));
 };
 
 const buildAllPersonnel = () => {
@@ -46,6 +66,8 @@ const buildAllPersonnel = () => {
 const personnelEvents = () => {
   $('body').on('click', '#addPersonnelBtn', newPersonnelForm.newPersonnelForm);
   $('body').on('click', '#newPersonnelSubmit', saveNewPersonnelItem);
+  $('body').on('click', '#editPersonnelBtn', editPersonnelForm.editPersonnelForm);
+  $('body').on('click', '#editPersonnelSubmit', editPersonnelItem);
 };
 
 export default { buildAllPersonnel, personnelEvents };
