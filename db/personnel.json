@@ -1,0 +1,45 @@
+{
+  "personnel1": {
+    "name": "Star-Lord",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/96/Star-Lord_AIW_Profile.jpg/revision/latest/scale-to-width-down/310?cb=20180518211942",
+    "description": "Star-Lord is a master strategist and problem solver who is an expert in close-quarter combat, various human and alien firearms, and battle techniques. He has extensive knowledge of various alien customs, societies, and cultures, and considerable knowledge about cosmic abstracts, such as Oblivion.",
+    "title": "Interplanetary Policeman",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"personnel2": {
+    "name": "Groot",
+    "imageUrl": "https://www.syfy.com/sites/syfy/files/styles/1140x640_hero/public/wire/legacy/2017/05/baby-groot-dancing.jpg",
+    "description": "Groot",
+    "title": "Groot",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"personnel3": {
+    "name": "Gamora",
+    "imageUrl": "https://img.cinemablend.com/cb/1/9/3/9/e/1/1939e11887e6e226bc2f5d586e2f72a261e900e87f4bbbc78231439773233018.jpg",
+    "description": "Gamora's powers include superhuman strength and agility and an accelerated healing factor. She also is an elite combatant, being able to beat most of the opponents in the galaxy. She is a member of the group known as the Infinity Watch.",
+    "title": "Badass",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"personnel4": {
+    "name": "Rocket",
+    "imageUrl": "https://snworksceo.imgix.net/car/614a86c8-405f-4fd8-b60d-93998c769661.sized-1000x1000.jpg?w=800",
+    "description": "Rocket is an intelligent, anthropomorphic raccoon, who is an expert marksman, weapon specialist and master tactician.",
+    "title": "Trouble Maker",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"personnel5": {
+    "name": "Drax",
+    "imageUrl": "https://static3.srcdn.com/wordpress/wp-content/uploads/2019/01/Guardians-Galaxy-Drax-Killed-Marvel.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5",
+    "description": "Drax's powers included enhanced strength and resilience, flight, and the ability to project energy blasts from his hands.",
+    "title": "Comedian",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"personnel6": {
+    "name": "Mantis",
+    "imageUrl": "https://i1.wp.com/movienooz.com/wp-content/uploads/2018/09/Mantis-HEADER.jpg?resize=800%2C445&ssl=1",
+    "description": "Mantis is an empath with the ability to sense other people's feelings and alter them.",
+    "title": "Healer",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"personnel7": {
+    "name": "Yondu",
+    "imageUrl": "https://www.screengeek.net/wp-content/uploads/2020/02/Yondu-MCU.jpg",
+    "description": "Yondu is a blue-skinned male with a large red fin protruding from the back of his head and his back; he is a spiritual warrior who can control his killing arrows via sound waves, most commonly by whistling.",
+    "title": "",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  }
+}
