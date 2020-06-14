@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import personnel from '../../components/personnel/personnel';
 
 const authDiv = $('#auth');
 const testDiv = $('#test');
@@ -7,7 +8,6 @@ const logoutButton = $('#navbar-logout-button');
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
-    console.error('user', user);
     if (user) {
       authDiv.addClass('hide');
       testDiv.removeClass('hide');
@@ -17,6 +17,7 @@ const checkLoginStatus = () => {
       testDiv.addClass('hide');
       logoutButton.addClass('hide');
     }
+    personnel.buildAllPersonnel();
   });
 };
 
