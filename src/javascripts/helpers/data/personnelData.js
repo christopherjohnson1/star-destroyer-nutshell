@@ -21,7 +21,13 @@ const getPersonnel = () => new Promise((resolve, reject) => {
 
 const addPersonnel = (newPersonnel) => axios.post(`${baseUrl}/personnel.json`, newPersonnel);
 
+const getPersonnelInfo = (personnelId) => axios.get(`${baseUrl}/personnel/${personnelId}.json`);
+
+const updatePersonnel = (personnelId, modifiedPersonnel) => axios.put(`${baseUrl}/personnel/${personnelId}.json`, modifiedPersonnel);
+
 export default {
   getPersonnel,
   addPersonnel,
+  getPersonnelInfo,
+  updatePersonnel,
 };

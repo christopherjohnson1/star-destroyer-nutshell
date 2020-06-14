@@ -21,7 +21,7 @@ const newPersonnelForm = () => {
   domString += '</div>';
   utils.printToDom('modalPersonnelForm', domString);
   $('newPersonnelSubmit').removeClass('hide');
-  $('.add').removeClass('hide');
+  $('#editPersonnelSubmit').addClass('hide');
 };
 
 export default { newPersonnelForm };
