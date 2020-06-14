@@ -42,6 +42,16 @@ const editPersonnelItem = (e) => {
     .catch((err) => console.error('edit personnel failed', err));
 };
 
+const removePersonnelCards = (e) => {
+  e.preventDefault();
+  const personnelId = e.target.closest('.card').id;
+  personnelData.deletePersonnel(personnelId)
+    .then(() => {
+      buildAllPersonnel();
+    })
+    .catch((err) => console.error('delete personnel failed', err));
+};
+
 const buildAllPersonnel = () => {
   let domString = '';
   personnelData.getPersonnel()
@@ -68,6 +78,7 @@ const personnelEvents = () => {
   $('body').on('click', '#newPersonnelSubmit', saveNewPersonnelItem);
   $('body').on('click', '#editPersonnelBtn', editPersonnelForm.editPersonnelForm);
   $('body').on('click', '#editPersonnelSubmit', editPersonnelItem);
+  $('body').on('click', '#deletePersonnelBtn', removePersonnelCards);
 };
 
 export default { buildAllPersonnel, personnelEvents };

@@ -25,9 +25,12 @@ const getPersonnelInfo = (personnelId) => axios.get(`${baseUrl}/personnel/${pers
 
 const updatePersonnel = (personnelId, modifiedPersonnel) => axios.put(`${baseUrl}/personnel/${personnelId}.json`, modifiedPersonnel);
 
+const deletePersonnel = (personnelId) => axios.delete(`${baseUrl}/personnel/${personnelId}.json`);
+
 export default {
   getPersonnel,
   addPersonnel,
   getPersonnelInfo,
   updatePersonnel,
+  deletePersonnel,
 };
