@@ -1,0 +1,38 @@
+{
+  "weapon1": {
+    "name": "Quad Blasters",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/f/f9/Quad_Blaster_GotGV2_Promo.png/revision/latest?cb=20170418030218",
+    "description": "The Quad Blaster has two separate triggers and barrels, for the index and middle finger respectively. Both of which can be fired at the same time and have a lethal and non-lethal attack function. They can also function as melee weapons to strike and knock out opponents, while striking enemies with the barrels while shooting the weapon to hit harder and harm stronger opponents.",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"weapon2": {
+    "name": "Yaka Arrow",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/16/Yaka_Arrow_2.png/revision/latest/scale-to-width-down/310?cb=20140815053349",
+    "description": "The Yaka Arrow is a weapon forged from Yaka metal by the Centaurians. Yaka Arrows respond to a specific range of sonic frequencies which change the material's reactive behavior. With self-propelling and extremely modulated anti-gravitational technology, the arrows themselves are able to defy gravity and move freely through the air at great speeds as well as being highly durable and sharp, allowing them to pierce through most targets, including the hull of a spacecraft.",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"weapon3": {
+    "name": "Godslayer",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/72/Gamora_Sword.png/revision/latest/",
+    "description": "The Godslayer is capable of cutting through even the most durable of metals and uses a unique energy core located in the hilt to lower the weight of the blade, making it easier for the wielder to handle. The detachable knife can be used as a melee or throwing weapon.[1] It can also be split into two swords, although this has not been demonstrated yet.",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"weapon4": {
+    "name": "Laser Cannon",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/e/e9/Laser_Canon_Profile.png/revision/latest/",
+    "description": "The Laser Cannon, or Rifle Cannon, is a weapon obtained by Rocket Raccoon from a confiscated weapons case in a customs station in the Uptown district of The Hub. It became his weapon of choice after leaving the station, carrying it on various bounty hunting missions.",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"weapon5": {
+    "name": "Plasma Sphere",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/7f/Plasma_Sphere_1.png/revision/latest/",
+    "description": "Star-Lord used the plasma sphere on Morag to illuminate the Temple Vault that contained the Orb. When ambushed by Korath the Pursuer, he kicked the plasma sphere backwards and it shattered against the Sakaarans, disintegrating them.",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"weapon6": {
+    "name": "Infinity Stones",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/1d/Infinity_Stones_VFX.png/revision/latest/",
+    "description": "As the Infinity Stones are the representation of all the necessary aspects of existence, they have absolute control over the fabric of reality they represent and from it, they derive extremely powerful capabilities to be wielded and are the most powerful artifacts in the known universe. Their power keeps the stability of the universe, meaning if they were removed from their reality, said reality would suffer catastrophic consequences in time.",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"weapon7": {
+    "name": "Hadron Enforcer",
+    "imageUrl": "https://cdnb.artstation.com/p/assets/images/images/016/483/129/large/jayna-pavlin-7m7etid.jpg?1552335779",
+    "descriptifireon": "The Hadron Enforcer is a weapon that can fire a bullet that contains hadron particles, which explode on impact of the target. Depending on the amount of matter and mass the target has the shell blast can, per Rocket's prerogative, shatter lunar bodies. It appears to be a single shot weapon, needing to be repaired every time it fires, proving a great disadvantage if time is not on one's side.",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  }
+}

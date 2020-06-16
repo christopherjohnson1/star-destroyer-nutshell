@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import personnel from '../../components/personnel/personnel';
+import weapons from '../../components/weapons/weapons';
 
 const authDiv = $('#auth');
 const testDiv = $('#test');
@@ -19,6 +20,7 @@ const checkLoginStatus = () => {
     }
     personnel.buildAllPersonnel();
     personnel.personnelEvents();
+    weapons.buildAllWeapons();
   });
 };
 
