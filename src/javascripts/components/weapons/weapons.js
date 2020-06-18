@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import weaponsData from '../../helpers/data/weaponsData';
+import newWeaponForm from './newWeaponForm';
 import utils from '../../helpers/utils';
 import weaponCards from './weaponCards';
 
@@ -24,4 +25,8 @@ const buildAllWeapons = () => {
     .catch((err) => console.error('get weapons failed', err));
 };
 
-export default { buildAllWeapons };
+const weaponEvents = () => {
+  $('body').on('click', '#addWeaponBtn', newWeaponForm.newWeaponForm);
+};
+
+export default { buildAllWeapons, weaponEvents };
