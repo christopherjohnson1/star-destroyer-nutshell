@@ -20,7 +20,7 @@ const newPersonnelForm = () => {
   domString += '<input type="text" id="personnelDescription" class="form-control" placeholder="Description">';
   domString += '</div>';
   utils.printToDom('modalPersonnelForm', domString);
-  $('newPersonnelSubmit').removeClass('hide');
+  $('#newPersonnelSubmit').removeClass('hide');
   $('#editPersonnelSubmit').addClass('hide');
 };
 
