@@ -21,6 +21,7 @@ const checkLoginStatus = () => {
     personnel.buildAllPersonnel();
     personnel.personnelEvents();
     weapons.buildAllWeapons();
+    weapons.weaponEvents();
   });
 };
 

@@ -1,7 +1,25 @@
+/* eslint-disable no-use-before-define */
 import firebase from 'firebase/app';
 import weaponsData from '../../helpers/data/weaponsData';
+import newWeaponForm from './newWeaponForm';
 import utils from '../../helpers/utils';
 import weaponCards from './weaponCards';
+
+const saveNewWeaponItem = (e) => {
+  e.stopImmediatePropagation();
+  const newWeapon = {
+    name: $('#weaponName').val(),
+    imageUrl: $('#weaponImageUrl').val(),
+    description: $('#weaponDescription').val(),
+  };
+  weaponsData.addWeapon(newWeapon)
+    .then(() => {
+      document.getElementById('modalWeaponForm').reset();
+      $('#addWeaponModal').modal('hide');
+      buildAllWeapons();
+    })
+    .catch((err) => console.error('save new weapon failed', err));
+};
 
 const buildAllWeapons = () => {
   let domString = '';
@@ -24,4 +42,9 @@ const buildAllWeapons = () => {
     .catch((err) => console.error('get weapons failed', err));
 };
 
-export default { buildAllWeapons };
+const weaponEvents = () => {
+  $('body').on('click', '#addWeaponBtn', newWeaponForm.newWeaponForm);
+  $('body').on('click', '#newWeaponSubmit', saveNewWeaponItem);
+};
+
+export default { buildAllWeapons, weaponEvents };

@@ -9,7 +9,7 @@ const newPersonnelForm = () => {
   domString += '</div>';
   domString += '<div class="form-group">';
   domString += '<label for="personnelImageUrl">Personnel Photo</label>';
-  domString += '<input type="text" id="personnelImageUrl" class="form-control" placeholder="imageUrl">';
+  domString += '<input type="text" id="personnelImageUrl" class="form-control" placeholder="Image Url">';
   domString += '</div>';
   domString += '<div class="form-group">';
   domString += '<label for="personnelTitle">Enter the title of personnel</label>';
@@ -20,7 +20,7 @@ const newPersonnelForm = () => {
   domString += '<input type="text" id="personnelDescription" class="form-control" placeholder="Description">';
   domString += '</div>';
   utils.printToDom('modalPersonnelForm', domString);
-  $('newPersonnelSubmit').removeClass('hide');
+  $('#newPersonnelSubmit').removeClass('hide');
   $('#editPersonnelSubmit').addClass('hide');
 };
 
