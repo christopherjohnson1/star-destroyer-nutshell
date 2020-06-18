@@ -6,7 +6,7 @@ import utils from '../../helpers/utils';
 import weaponCards from './weaponCards';
 
 const saveNewWeaponItem = (e) => {
-  e.stopImmediatePropogation();
+  e.stopImmediatePropagation();
   const newWeapon = {
     name: $('#weaponName').val(),
     imageUrl: $('#weaponImageUrl').val(),
