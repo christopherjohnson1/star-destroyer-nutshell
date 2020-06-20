@@ -39,6 +39,16 @@ const editWeaponItem = (e) => {
     .catch((err) => console.error('edit weapon failed', err));
 };
 
+const removeWeaponCards = (e) => {
+  e.preventDefault();
+  const weaponId = e.target.closest('.card').id;
+  weaponsData.deleteWeapon(weaponId)
+    .then(() => {
+      buildAllWeapons();
+    })
+    .catch((err) => console.error('delete weapon failed', err));
+};
+
 const buildAllWeapons = () => {
   let domString = '';
   weaponsData.getWeapons()
@@ -65,6 +75,7 @@ const weaponEvents = () => {
   $('body').on('click', '#newWeaponSubmit', saveNewWeaponItem);
   $('body').on('click', '#editWeaponBtn', editWeaponForm.editWeaponForm);
   $('body').on('click', '#editWeaponSubmit', editWeaponItem);
+  $('body').on('click', '#deleteWeaponBtn', removeWeaponCards);
 };
 
 export default { buildAllWeapons, weaponEvents };
