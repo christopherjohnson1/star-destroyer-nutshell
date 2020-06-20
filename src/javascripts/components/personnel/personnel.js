@@ -26,7 +26,6 @@ const saveNewPersonnelItem = (e) => {
 const editPersonnelItem = (e) => {
   e.preventDefault();
   const personnelId = $('.personnel-form').data('id');
-  console.error(personnelId);
   const editPersonnel = {
     name: $('#editPersonnelName').val(),
     imageUrl: $('#editPersonnelImageUrl').val(),

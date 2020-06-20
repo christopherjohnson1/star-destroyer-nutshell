@@ -4,6 +4,7 @@ import weaponsData from '../../helpers/data/weaponsData';
 import newWeaponForm from './newWeaponForm';
 import utils from '../../helpers/utils';
 import weaponCards from './weaponCards';
+import editWeaponForm from './editWeaponForm';
 
 const saveNewWeaponItem = (e) => {
   e.stopImmediatePropagation();
@@ -19,6 +20,23 @@ const saveNewWeaponItem = (e) => {
       buildAllWeapons();
     })
     .catch((err) => console.error('save new weapon failed', err));
+};
+
+const editWeaponItem = (e) => {
+  e.preventDefault();
+  const weaponId = $('.weapon-form').data('id');
+  const editWeapon = {
+    name: $('#editWeaponName').val(),
+    imageUrl: $('#editWeaponImageUrl').val(),
+    description: $('#editWeaponDescription').val(),
+  };
+  weaponsData.updateWeapon(weaponId, editWeapon)
+    .then(() => {
+      document.getElementById('modalWeaponForm').reset();
+      $('#addWeaponModal').modal('hide');
+      buildAllWeapons();
+    })
+    .catch((err) => console.error('edit weapon failed', err));
 };
 
 const buildAllWeapons = () => {
@@ -45,6 +63,8 @@ const buildAllWeapons = () => {
 const weaponEvents = () => {
   $('body').on('click', '#addWeaponBtn', newWeaponForm.newWeaponForm);
   $('body').on('click', '#newWeaponSubmit', saveNewWeaponItem);
+  $('body').on('click', '#editWeaponBtn', editWeaponForm.editWeaponForm);
+  $('body').on('click', '#editWeaponSubmit', editWeaponItem);
 };
 
 export default { buildAllWeapons, weaponEvents };
