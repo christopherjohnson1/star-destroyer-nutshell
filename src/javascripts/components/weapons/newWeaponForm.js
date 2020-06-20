@@ -17,7 +17,7 @@ const newWeaponForm = () => {
   domString += '</div>';
   utils.printToDom('modalWeaponForm', domString);
   $('#newWeaponSubmit').removeClass('hide');
-  $('#newWeaponEdit').addClass('hide');
+  $('#editWeaponSubmit').addClass('hide');
 };
 
 export default { newWeaponForm };
