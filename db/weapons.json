@@ -32,7 +32,7 @@
   },"weapon7": {
     "name": "Hadron Enforcer",
     "imageUrl": "https://cdnb.artstation.com/p/assets/images/images/016/483/129/large/jayna-pavlin-7m7etid.jpg?1552335779",
-    "descriptifireon": "The Hadron Enforcer is a weapon that can fire a bullet that contains hadron particles, which explode on impact of the target. Depending on the amount of matter and mass the target has the shell blast can, per Rocket's prerogative, shatter lunar bodies. It appears to be a single shot weapon, needing to be repaired every time it fires, proving a great disadvantage if time is not on one's side.",
+    "description": "The Hadron Enforcer is a weapon that can fire a bullet that contains hadron particles, which explode on impact of the target. Depending on the amount of matter and mass the target has the shell blast can, per Rocket's prerogative, shatter lunar bodies. It appears to be a single shot weapon, needing to be repaired every time it fires, proving a great disadvantage if time is not on one's side.",
     "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
   }
 }
