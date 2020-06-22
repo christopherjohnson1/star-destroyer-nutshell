@@ -19,4 +19,9 @@ const getPlanetartSectors = () => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getPlanetartSectors };
+const addPlanetarySector = (newPlanetarySector) => axios.post(`${baseUrl}/planetarySector.json`, newPlanetarySector);
+
+export default {
+  getPlanetartSectors,
+  addPlanetarySector,
+};

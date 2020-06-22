@@ -1,7 +1,25 @@
+/* eslint-disable no-use-before-define */
 import firebase from 'firebase/app';
 import planetarySectorData from '../../helpers/data/planetarySectorData';
 import utils from '../../helpers/utils';
 import planetarySectorCards from './planetarySectorCards';
+import newPlanetarySectorForm from './newPlanetarySectorForm';
+
+const saveNewPlanetarySectorItem = (e) => {
+  e.stopImmediatePropagation();
+  const newPlanetarySector = {
+    name: $('#planetarySectorName').val(),
+    imageUrl: $('#planetarySectorImageUrl').val(),
+    beenThere: $('#explored').val(),
+  };
+  planetarySectorData.addPlanetarySector(newPlanetarySector)
+    .then(() => {
+      document.getElementById('modalPlanetarySectorForm').reset();
+      $('#addPlanetarySectorModal').modal('hide');
+      buildAllPlanetarySectors();
+    })
+    .catch((err) => console.error('save new planetary sector failed', err));
+};
 
 const buildAllPlanetarySectors = () => {
   let domString = '';
@@ -24,4 +42,9 @@ const buildAllPlanetarySectors = () => {
     .catch((err) => console.error('get planetary sectors failed', err));
 };
 
-export default { buildAllPlanetarySectors };
+const planetarySectorEvents = () => {
+  $('body').on('click', '#addPlanetarySectorBtn', newPlanetarySectorForm.newPlanetarySectorForm);
+  $('body').on('click', '#newPlanetarySectorSubmit', saveNewPlanetarySectorItem);
+};
+
+export default { buildAllPlanetarySectors, planetarySectorEvents };
