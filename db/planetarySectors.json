@@ -1,0 +1,38 @@
+{
+  "planetarySector1": {
+    "name": "Earth",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/8e/Earth_TTDW.png/revision/latest/",
+    "beenThere": true,
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"planetarySector2": {
+    "name": "Nine Realms",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/3b/Yggdrasil.png/revision/latest/",
+    "beenThere": true,
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"planetarySector3": {
+    "name": "Xandar",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/4/44/Xandar_Planet.png/revision/latest/",
+    "beenThere": true,
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"planetarySector4": {
+    "name": "Multiverse",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/6/6a/DS_078.jpg/revision/latest/",
+    "beenThere": true,
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"planetarySector5": {
+    "name": "Sanctuary",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/c/cd/Sanctuary-GOTG.png/revision/latest/",
+    "beenThere": false,
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"planetarySector6": {
+    "name": "Collector's Museum",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/94/Collector%27s_Museum_-_Outside.png/revision/latest/",
+    "beenThere": false,
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"planetarySector7": {
+    "name": "Knowhere",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d9/Knowhere_-_movie.png/revision/latest/",
+    "beenThere": false,
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  }
+}
