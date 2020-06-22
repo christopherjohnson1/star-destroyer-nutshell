@@ -7,11 +7,7 @@ const buildAllPlanetarySectorCards = (planetarySectors) => {
   domString += `<img src="${planetarySectors.imageUrl}" class="card-img-top img-fluid planetary-sector-img" alt="Photo of ${planetarySectors.name}">`;
   domString += '<div class="card-body">';
   domString += `<h5 class="card-title">${planetarySectors.name}</h5>`;
-  if (planetarySectors.beenThere === true) {
-    domString += '<p class="card-text">Explored: <i class="fas fa-check"></i></p>';
-  } else {
-    domString += '<p class="card-text">Explored: <i class="fas fa-times"></i></p>';
-  }
+  domString += `<p class="card-text">Has been visited: ${planetarySectors.beenThere}</p>`;
   const user = firebase.auth().currentUser;
   if (user !== null) {
     domString += '<button id="editPlanetarySectorBtn" class="col-5 btn editPlanetarySectorBtn"><i class="fas fa-feather-alt"></i>Edit</button>';

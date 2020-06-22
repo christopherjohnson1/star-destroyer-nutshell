@@ -24,6 +24,7 @@ const checkLoginStatus = () => {
     weapons.buildAllWeapons();
     weapons.weaponEvents();
     planetarySectors.buildAllPlanetarySectors();
+    planetarySectors.planetarySectorEvents();
   });
 };
 
