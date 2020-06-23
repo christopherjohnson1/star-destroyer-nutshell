@@ -21,7 +21,13 @@ const getPlanetartSectors = () => new Promise((resolve, reject) => {
 
 const addPlanetarySector = (newPlanetarySector) => axios.post(`${baseUrl}/planetarySector.json`, newPlanetarySector);
 
+const getPlanetarySectorInfo = (planetarySectorId) => axios.get(`${baseUrl}/planetarySector/${planetarySectorId}.json`);
+
+const updatePlanetarySector = (planetarySectorId, modifiedPlanetarySector) => axios.put(`${baseUrl}/planetarySector/${planetarySectorId}.json`, modifiedPlanetarySector);
+
 export default {
   getPlanetartSectors,
   addPlanetarySector,
+  getPlanetarySectorInfo,
+  updatePlanetarySector,
 };
