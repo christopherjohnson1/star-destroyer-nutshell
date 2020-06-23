@@ -39,6 +39,16 @@ const editPlanetarySectorItem = (e) => {
     .catch((err) => console.error('edit planetary sector failed', err));
 };
 
+const removePlanetarySectorCard = (e) => {
+  e.preventDefault();
+  const planetarySectorId = e.target.closest('.card').id;
+  planetarySectorData.deletePlanetarySector(planetarySectorId)
+    .then(() => {
+      buildAllPlanetarySectors();
+    })
+    .catch((err) => console.error('delete planetary sector failed', err));
+};
+
 const buildAllPlanetarySectors = () => {
   let domString = '';
   planetarySectorData.getPlanetartSectors()
@@ -65,6 +75,7 @@ const planetarySectorEvents = () => {
   $('body').on('click', '#newPlanetarySectorSubmit', saveNewPlanetarySectorItem);
   $('body').on('click', '#editPlanetarySectorBtn', editPlanetarySectorForm.editPlanetarySectorForm);
   $('body').on('click', '#editPlanetarySectorSubmit', editPlanetarySectorItem);
+  $('body').on('click', '#deletePlanetarySectorBtn', removePlanetarySectorCard);
 };
 
 export default { buildAllPlanetarySectors, planetarySectorEvents };

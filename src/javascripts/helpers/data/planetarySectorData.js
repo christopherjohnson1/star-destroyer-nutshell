@@ -25,9 +25,12 @@ const getPlanetarySectorInfo = (planetarySectorId) => axios.get(`${baseUrl}/plan
 
 const updatePlanetarySector = (planetarySectorId, modifiedPlanetarySector) => axios.put(`${baseUrl}/planetarySector/${planetarySectorId}.json`, modifiedPlanetarySector);
 
+const deletePlanetarySector = (planetarySectorId) => axios.delete(`${baseUrl}/planetarySector/${planetarySectorId}.json`);
+
 export default {
   getPlanetartSectors,
   addPlanetarySector,
   getPlanetarySectorInfo,
   updatePlanetarySector,
+  deletePlanetarySector,
 };
