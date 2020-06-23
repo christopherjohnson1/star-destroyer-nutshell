@@ -1,0 +1,45 @@
+{
+  "enemy1": {
+    "name": "Thanos",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/6/63/97d1d9f934a350cee765c5ac1a466605.jpg/revision/latest/",
+    "strengths": "Super Strength, invulnerability, immortality, telepathy, teleportation, genius intellect, force fields, matter manipulation, and energy projection",
+    "weaknesses": "Perhaps the closest thing to a weakness that Thanos has is that every time he transcends to godhood and takes over the universe (Cosmic Cube, Infinity Gauntlet, Heart of the Universe), he feels unworthy to wield such powers, and intentionally orchestrates his own downfall such that he is no longer omnipotent.",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"enemy2": {
+    "name": "Ronan the Accuser",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/c/cd/RonanGotgTextlessPoster.jpg/revision/latest/",
+    "strengths": "Superhuman strength, superehuman durability, enhanced agility, and regenerative healing",
+    "weaknesses": "His hammer that carries the Power Stone is his only weakness",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"enemy3": {
+    "name": "Korath the Pursuer",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/78/Korath_Textless_Poster.jpg/revision/latest/",
+    "strengths": "Superhuman strength, superhuman durability, enhanced agility, and regenerative healing factor",
+    "weaknesses": "Being killed by Drax the Destroyer",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"enemy4": {
+    "name": "Ego",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/06/Ego_Profile%281%29.png/revision/latest/",
+    "strengths": "Energy manipulation, light tentacles, light beams, light form, power drawing, hypnosis inducement, biological manipulation: self healing, shapeshifting, superhuman strength, superhuman durability, immortality, matter manipulation, flight, planetary form, and seedling creation",
+    "weaknesses": "His underground core",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"enemy5": {
+    "name": "Abilisk",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/db/Abilisk_1.png/revision/latest/",
+    "strengths": "Thick hide, super strength, super durability, matter waves, amd interdimensional travel",
+    "weaknesses": "Gamora's sword",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"enemy6": {
+    "name": "Ayesha",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/87/Ayesha_profile_%281%29.png/revision/latest/",
+    "strengths": "Genius level intellect, and acute genealogical perception",
+    "weaknesses": "Unknown",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  },"enemy7": {
+    "name": "Ebony Maw",
+    "imageUrl": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/c/c0/Ebony_Maw_displeased.jpg/revision/latest/",
+    "strengths": "Telekinesis, sorcerer, pilot, and tactician",
+    "weaknesses": "Unknown",
+    "uid": "35EaCkKvQhVqmcE2vUZxAeI6yAW2"
+  }
+}

@@ -3,6 +3,7 @@ import 'firebase/auth';
 import personnel from '../../components/personnel/personnel';
 import weapons from '../../components/weapons/weapons';
 import planetarySectors from '../../components/planetarySectors/planetarySectors';
+import enemies from '../../components/enemies/enemies';
 
 const authDiv = $('#auth');
 const testDiv = $('#test');
@@ -25,6 +26,7 @@ const checkLoginStatus = () => {
     weapons.weaponEvents();
     planetarySectors.buildAllPlanetarySectors();
     planetarySectors.planetarySectorEvents();
+    enemies.buildAllEnemies();
   });
 };
 
