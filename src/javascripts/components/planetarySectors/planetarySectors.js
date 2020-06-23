@@ -4,6 +4,7 @@ import planetarySectorData from '../../helpers/data/planetarySectorData';
 import utils from '../../helpers/utils';
 import planetarySectorCards from './planetarySectorCards';
 import newPlanetarySectorForm from './newPlanetarySectorForm';
+import editPlanetarySectorForm from './editPlanetarySectorForm';
 
 const saveNewPlanetarySectorItem = (e) => {
   e.stopImmediatePropagation();
@@ -19,6 +20,23 @@ const saveNewPlanetarySectorItem = (e) => {
       buildAllPlanetarySectors();
     })
     .catch((err) => console.error('save new planetary sector failed', err));
+};
+
+const editPlanetarySectorItem = (e) => {
+  e.preventDefault();
+  const planetarySectorId = $('.planetary-sector-form').data('id');
+  const editPlanetarySector = {
+    name: $('#editPlanetarySectorName').val(),
+    imageUrl: $('#editPlanetarySectorImageUrl').val(),
+    beenThere: $('#editExplore').val(),
+  };
+  planetarySectorData.updatePlanetarySector(planetarySectorId, editPlanetarySector)
+    .then(() => {
+      document.getElementById('modalPlanetarySectorForm').reset();
+      $('#addPlanetarySectorModal').modal('hide');
+      buildAllPlanetarySectors();
+    })
+    .catch((err) => console.error('edit planetary sector failed', err));
 };
 
 const buildAllPlanetarySectors = () => {
@@ -45,6 +63,8 @@ const buildAllPlanetarySectors = () => {
 const planetarySectorEvents = () => {
   $('body').on('click', '#addPlanetarySectorBtn', newPlanetarySectorForm.newPlanetarySectorForm);
   $('body').on('click', '#newPlanetarySectorSubmit', saveNewPlanetarySectorItem);
+  $('body').on('click', '#editPlanetarySectorBtn', editPlanetarySectorForm.editPlanetarySectorForm);
+  $('body').on('click', '#editPlanetarySectorSubmit', editPlanetarySectorItem);
 };
 
 export default { buildAllPlanetarySectors, planetarySectorEvents };
