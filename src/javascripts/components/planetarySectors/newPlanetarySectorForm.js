@@ -12,9 +12,11 @@ const newPlanetarySectorForm = () => {
   domString += '<input type="text" id="planetarySectorImageUrl" class="form-control" placeholder="Image Url">';
   domString += '</div>';
   domString += '<div class="form-group">';
-  domString += '<p class="radio-title">Select appropriate value if planetary sector explored or not</p>';
-  domString += '<label for="explored">Enter Yes or No</label>';
-  domString += '<input type="text" id="explored" class="form-control" placeholder="Enter yes or no">';
+  domString += '<label for="explore">Choose Yes or No if you have been there</label>';
+  domString += '<select id="explore" name="explore">';
+  domString += '<option value="Yes">Yes</option>';
+  domString += '<option value="No">No</option>';
+  domString += '</select>';
   domString += '</div>';
   utils.printToDom('modalPlanetarySectorForm', domString);
   $('#newPlanetarySectorSubmit').removeClass('hide');
