@@ -10,7 +10,7 @@ const saveNewPlanetarySectorItem = (e) => {
   const newPlanetarySector = {
     name: $('#planetarySectorName').val(),
     imageUrl: $('#planetarySectorImageUrl').val(),
-    beenThere: $('#explored').val(),
+    beenThere: $('#explore').val(),
   };
   planetarySectorData.addPlanetarySector(newPlanetarySector)
     .then(() => {
