@@ -21,7 +21,13 @@ const getEnemies = () => new Promise((resolve, reject) => {
 
 const addEnemy = (newEnemy) => axios.post(`${baseUrl}/enemy.json`, newEnemy);
 
+const getEnemyInfo = (enemyId) => axios.get(`${baseUrl}/enemy/${enemyId}.json`);
+
+const updateEnemy = (enemyId, modifiedEnemy) => axios.put(`${baseUrl}/enemy/${enemyId}.json`, modifiedEnemy);
+
 export default {
   getEnemies,
   addEnemy,
+  getEnemyInfo,
+  updateEnemy,
 };

@@ -16,7 +16,7 @@ const newEnemyForm = () => {
   domString += '<input type="text" id="enemyStrengths" class="form-control" placeholder="Enemy Strengths">';
   domString += '</div>';
   domString += '<div class="form-group">';
-  domString += '<label for="enemyWeaknesses">Enter all of the weaknesses of the enemy so they can be defated!</label>';
+  domString += '<label for="enemyWeaknesses">Enter all of enemies weaknesses so they can be defeated!</label>';
   domString += '<input type="text" id="enemyWeaknesses" class="form-control" placeholder="Enemy Weaknesses">';
   domString += '</div>';
   utils.printToDom('modalEnemyForm', domString);
