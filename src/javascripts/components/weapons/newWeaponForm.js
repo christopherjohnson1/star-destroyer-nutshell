@@ -8,7 +8,7 @@ const newWeaponForm = () => {
   domString += '<input type="text" id="weaponName" class="form-control" placeholder="Weapon Name">';
   domString += '</div>';
   domString += '<div class="form-group">';
-  domString += '<label for="weaponImageUrl">Weapon Photo</label>';
+  domString += '<label for="weaponImageUrl">Weapon Photo Url</label>';
   domString += '<input type="text" id="weaponImageUrl" class="form-control" placeholder="Image Url">';
   domString += '</div>';
   domString += '<div class="form-group">';
