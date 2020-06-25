@@ -2,17 +2,57 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-    background-color: coral;
+    background-color: #0b1419;
 }
 
 .hide {
     display: none;
   }
 
-.fa-check {
-    color: #4BB543;
+/* Landing Page */
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background: #0b1419;
+    z-index: -1;
 }
 
-.fa-times {
-    color: red;
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+    background-image: url(../images/guardiansOfTheGalaxy.png);
+    margin-top: 3.75rem;
+    margin-left: 4.5rem;
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.btn {
+    color: whitesmoke;
+}
+
+.font-color {
+    color: whitesmoke;
+}
+
+.card {
+    color: black;
 }
