@@ -41,6 +41,16 @@ const editEnemyItem = (e) => {
     .catch((err) => console.error('edit enemy failed', err));
 };
 
+const removeEnemyCard = (e) => {
+  e.preventDefault();
+  const enemyId = e.target.closest('.card').id;
+  enemiesData.deleteEnemy(enemyId)
+    .then(() => {
+      buildAllEnemies();
+    })
+    .catch((err) => console.error('delete enemy failed', err));
+};
+
 const buildAllEnemies = () => {
   let domString = '';
   enemiesData.getEnemies()
@@ -67,6 +77,7 @@ const enemyEvents = () => {
   $('body').on('click', '#newEnemySubmit', saveNewEnemyItem);
   $('body').on('click', '#editEnemyBtn', editEnemyForm.editEnemyForm);
   $('body').on('click', '#editEnemySubmit', editEnemyItem);
+  $('body').on('click', '#deleteEnemyBtn', removeEnemyCard);
 };
 
 export default { buildAllEnemies, enemyEvents };
