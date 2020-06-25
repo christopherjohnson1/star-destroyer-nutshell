@@ -25,9 +25,12 @@ const getEnemyInfo = (enemyId) => axios.get(`${baseUrl}/enemy/${enemyId}.json`);
 
 const updateEnemy = (enemyId, modifiedEnemy) => axios.put(`${baseUrl}/enemy/${enemyId}.json`, modifiedEnemy);
 
+const deleteEnemy = (enemyId) => axios.delete(`${baseUrl}/enemy/${enemyId}.json`);
+
 export default {
   getEnemies,
   addEnemy,
   getEnemyInfo,
   updateEnemy,
+  deleteEnemy,
 };
