@@ -4,6 +4,7 @@ import enemiesData from '../../helpers/data/enemiesData';
 import utils from '../../helpers/utils';
 import enemyCards from './enemyCards';
 import newEnemyForm from './newEnemyForm';
+import editEnemyForm from './editEnemyForm';
 
 const saveNewEnemyItem = (e) => {
   e.stopImmediatePropagation();
@@ -20,6 +21,24 @@ const saveNewEnemyItem = (e) => {
       buildAllEnemies();
     })
     .catch((err) => console.error('save new enemy failed', err));
+};
+
+const editEnemyItem = (e) => {
+  e.preventDefault();
+  const enemyId = $('.enemy-form').data('id');
+  const editEnemy = {
+    name: $('#editEnemyName').val(),
+    imageUrl: $('#editEnemyImageUrl').val(),
+    strengths: $('#editEnemyStrengths').val(),
+    weaknesses: $('#editEnemyWeaknesses').val(),
+  };
+  enemiesData.updateEnemy(enemyId, editEnemy)
+    .then(() => {
+      document.getElementById('modalEnemyForm').reset();
+      $('#addEnemyModal').modal('hide');
+      buildAllEnemies();
+    })
+    .catch((err) => console.error('edit enemy failed', err));
 };
 
 const buildAllEnemies = () => {
@@ -46,6 +65,8 @@ const buildAllEnemies = () => {
 const enemyEvents = () => {
   $('body').on('click', '#addEnemyBtn', newEnemyForm.newEnemyForm);
   $('body').on('click', '#newEnemySubmit', saveNewEnemyItem);
+  $('body').on('click', '#editEnemyBtn', editEnemyForm.editEnemyForm);
+  $('body').on('click', '#editEnemySubmit', editEnemyItem);
 };
 
 export default { buildAllEnemies, enemyEvents };
