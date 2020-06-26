@@ -11,8 +11,8 @@ const buildPersonnelCards = (personnel) => {
   domString += `<p class="card-text">Description: ${personnel.description}</p>`;
   const user = firebase.auth().currentUser;
   if (user !== null) {
-    domString += '<button id="editPersonnelBtn" class="col-5 btn editPersonnelBtn"><i class="fas fa-feather-alt"></i> Edit</button>';
-    domString += '<button id="deletePersonnelBtn" class="col-5 btn delete-personnel-btn"><i class="far fa-trash-alt"></i>Delete</button>';
+    domString += '<button id="editPersonnelBtn" class="col-5 btn btn-dark editPersonnelBtn add-edit-btn"><i class="fas fa-feather-alt"></i> Edit</button>';
+    domString += '<button id="deletePersonnelBtn" class="col-5 btn btn-dark delete-personnel-btn add-edit-btn"><i class="far fa-trash-alt"></i>Delete</button>';
   }
   domString += '</div>';
   domString += '</div>';

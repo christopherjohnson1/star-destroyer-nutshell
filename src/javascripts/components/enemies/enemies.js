@@ -55,7 +55,7 @@ const buildAllEnemies = () => {
   let domString = '';
   enemiesData.getEnemies()
     .then((allEnemies) => {
-      domString += '<div id="enemies-title" class="text-center">';
+      domString += '<div id="enemies-title" class="text-center section-title mb-3">';
       domString += '<h2 class="text-center mt-3">Enemies</h2>';
       const user = firebase.auth().currentUser;
       if (user !== null) {

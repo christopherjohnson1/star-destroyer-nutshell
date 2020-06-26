@@ -10,8 +10,8 @@ const buildAllPlanetarySectorCards = (planetarySectors) => {
   domString += `<p class="card-text">Has been visited: ${planetarySectors.beenThere}</p>`;
   const user = firebase.auth().currentUser;
   if (user !== null) {
-    domString += '<button id="editPlanetarySectorBtn" class="col-5 btn editPlanetarySectorBtn"><i class="fas fa-feather-alt"></i>Edit</button>';
-    domString += '<button id="deletePlanetarySectorBtn" class="col-5 btn deletePlanetarySectorBtn"><i class="far fa-trash-alt"></i>Delete</button>';
+    domString += '<button id="editPlanetarySectorBtn" class="col-5 btn btn-dark editPlanetarySectorBtn add-edit-btn"><i class="fas fa-feather-alt"></i>Edit</button>';
+    domString += '<button id="deletePlanetarySectorBtn" class="col-5 btn btn-dark deletePlanetarySectorBtn add-edit-btn"><i class="far fa-trash-alt"></i>Delete</button>';
   }
   domString += '</div>';
   domString += '</div>';

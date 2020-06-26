@@ -55,14 +55,14 @@ const buildAllPersonnel = () => {
   let domString = '';
   personnelData.getPersonnel()
     .then((allPersonnel) => {
-      domString += '<div id="personnel-title" class="text-center">';
+      domString += '<div id="personnel-title" class="text-center section-title mb-3">';
       domString += '<h2 class="text-center mt-3">Personnel</h2>';
       const user = firebase.auth().currentUser;
       if (user !== null) {
         domString += '<button id="addPersonnelBtn" class="btn btn-lg add-personnel-btn"><i class="fas fa-plus"></i>Add Personnel</button>';
       }
       domString += '</div>';
-      domString += '<div class="container-fluid d-flex flex-wrap col-md-9 col-sm-10">';
+      domString += '<div class="container-fluid d-flex flex-wrap col-md-9 col-sm-10 justify-content-around">';
       allPersonnel.forEach((personnel) => {
         domString += personnelCards.buildPersonnelCards(personnel);
       });
