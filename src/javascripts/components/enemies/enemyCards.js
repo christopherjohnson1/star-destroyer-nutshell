@@ -11,8 +11,8 @@ const buildAllEnemyCards = (enemies) => {
   domString += `<p class="card-text">Weaknesses: ${enemies.weaknesses}</p>`;
   const user = firebase.auth().currentUser;
   if (user !== null) {
-    domString += '<button id="editEnemyBtn" class="col-5 btn editEnemyBtn"><i class="fas fa-feather-alt"></i>Edit</button>';
-    domString += '<button id="deleteEnemyBtn" class="col-5 btn deleteEnemyBtn"><i class="far fa-trash-alt"></i>Delete</button>';
+    domString += '<button id="editEnemyBtn" class="col-5 btn btn-dark editEnemyBtn add-edit-btn"><i class="fas fa-feather-alt"></i>Edit</button>';
+    domString += '<button id="deleteEnemyBtn" class="col-5 btn btn-dark deleteEnemyBtn add-edit-btn"><i class="far fa-trash-alt"></i>Delete</button>';
   }
   domString += '</div>';
   domString += '</div>';

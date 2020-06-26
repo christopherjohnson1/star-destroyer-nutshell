@@ -53,7 +53,7 @@ const buildAllWeapons = () => {
   let domString = '';
   weaponsData.getWeapons()
     .then((allWeapons) => {
-      domString += '<div id="weapon-title" class="text-center">';
+      domString += '<div id="weapon-title" class="text-center section-title mb-3">';
       domString += '<h2 class="text-center mt-3">Weapons</h2>';
       const user = firebase.auth().currentUser;
       if (user !== null) {

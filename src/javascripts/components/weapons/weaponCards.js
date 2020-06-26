@@ -10,8 +10,8 @@ const buildAllWeaponCards = (weapons) => {
   domString += `<p class="card-text">Description: ${weapons.description}</p>`;
   const user = firebase.auth().currentUser;
   if (user !== null) {
-    domString += '<button id="editWeaponBtn" class="col-5 btn editWeaponBtn"><i class="fas fa-feather-alt"></i>Edit</button>';
-    domString += '<button id="deleteWeaponBtn" class="col-5 btn deleteWeaponBtn"><i class="far fa-trash-alt"></i>Delete</button>';
+    domString += '<button id="editWeaponBtn" class="col-5 btn btn-dark editWeaponBtn add-edit-btn"><i class="fas fa-feather-alt"></i>Edit</button>';
+    domString += '<button id="deleteWeaponBtn" class="col-5 btn btn-dark deleteWeaponBtn add-edit-btn"><i class="far fa-trash-alt"></i>Delete</button>';
   }
   domString += '</div>';
   domString += '</div>';
